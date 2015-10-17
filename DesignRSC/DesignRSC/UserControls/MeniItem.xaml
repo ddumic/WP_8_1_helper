@@ -1,0 +1,33 @@
+﻿<UserControl
+    x:Class="DesignRSC.UserControls.MeniItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignRSC.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="150"
+    d:DesignWidth="400">
+
+    <Border BorderThickness="0,0,0,4" BorderBrush="#ff1643"  Margin="10">
+        <Grid Margin="0,0,0,10" Tapped="Grid_Tapped">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Border BorderBrush="#ff1643" BorderThickness="1">
+                    <Grid Background="Transparent">
+                        <Image Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/Assets/Icons/User-Login.png"/>
+                        <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Profile"/>
+                    </Grid>
+                </Border>
+                
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,20,0,0">
+                <TextBlock Text="Profil" FontSize="30"/>
+                <TextBlock Margin="10,0,0,0" FontSize="18">
+                    <Run>Uredite svoj profil</Run>
+                </TextBlock>
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+</UserControl>

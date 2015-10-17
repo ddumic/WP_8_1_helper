@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="DesignRSC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignRSC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#555555">
+
+    <Page.BottomAppBar>
+        <CommandBar Background="#ff1643" Foreground="#555">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Accept" Click="AppBarButton_Click"/>
+                <AppBarButton Icon="Account" Click="AppBarButton_Click_1"/>
+                <AppBarButton Icon="Scan" Click="AppBarButton_Click_2"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,0" Background="#ff1643">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" Text="RSC" Foreground="White" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Foreground="#ff1643"  Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="20" VerticalAlignment="Center">
+            <TextBox Foreground="#0050EF" BorderThickness="0,0,0,4" BorderBrush="#ff1643" Background="Transparent" Text="{Binding Username, Mode=TwoWay}"/>
+            <PasswordBox BorderBrush="#ff1643" BorderThickness="0,0,0,4" Foreground="#ff1643" Background="Transparent" Password="{Binding Password, Mode=TwoWay}"/>
+        </StackPanel>
+    </Grid>
+</Page>

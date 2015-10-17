@@ -1,0 +1,28 @@
+﻿<UserControl
+    x:Class="DesignRSC.UserControls.OtherItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignRSC.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="150"
+    d:DesignWidth="400"
+    Margin="10">
+
+    <Border BorderThickness="0,0,0,4" BorderBrush="#ff1643" Margin="0">
+        <Grid Margin="0,0,0,10" IsTapEnabled="False" >
+            <StackPanel IsTapEnabled="False"  VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Image IsTapEnabled="False" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Assets/Icons/roko_64_64.png"/>
+            </StackPanel>
+
+            <StackPanel IsTapEnabled="False"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,20,0,0">
+                <TextBlock IsTapEnabled="False"  Text="Roko Labrovic" FontSize="30"/>
+                <TextBlock IsTapEnabled="False"  Margin="10,0,0,0" FontSize="18">
+                    <Run>Tdsadfsarastdafdsfsdfsd</Run>
+                </TextBlock>
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</UserControl>
